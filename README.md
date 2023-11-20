@@ -1,7 +1,7 @@
 # Windows 10/11 bloatware remover
-remove Microsoft build-in bloatware from Win10 and Win11 
+remove Microsoft build-in bloatware from Win10 and Win11 with ease. 
 
-The script is designed to be deployed as group policy, run as scheduled task or manual by a helpdesk agent on windows 7 and higher client computers.
+The script is designed to be deployed as group policy on windows 7 and higher client computers.
 
 group policy (GPO) script deployment
 
