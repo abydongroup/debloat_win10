@@ -1,5 +1,5 @@
 # PowerShell-Skript zur Entfernung vorinstallierter Bloatware in Windows 10 basierend auf einer Whitelist
-# script design: I.Pielczyk für task INFRA-1848 - Windows 10: Vorinstallierte Apps deinstallieren
+# script design: I.Pielczyk
 
 # Überprüfen, ob das Skript bereits ausgeführt wurde
 $LogFile = "C:\Temp\RemoveApps_Log.txt"
@@ -75,7 +75,6 @@ $Whitelist = @(
     "Microsoft.RemoteDesktop",
     "Microsoft.Windows.OneDrive"
 )
-
 
 # Alle vorinstallierten Apps abrufen
 $InstalledApps = Get-AppxPackage -AllUsers | Where-Object { $_.PackageFullName -notin $Whitelist }
