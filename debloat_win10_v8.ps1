@@ -1,5 +1,4 @@
 # PowerShell-Skript zur Entfernung vorinstallierter Bloatware in Windows 10 basierend auf einer Whitelist
-# script design: I.Pielczyk
 
 # Überprüfen, ob das Skript bereits ausgeführt wurde
 $LogFile = "C:\Temp\RemoveApps_Log.txt"
@@ -10,28 +9,25 @@ if (Test-Path $LogFile) {
 
 # Liste der Apps, die behalten werden sollen
 $Whitelist = @(
+    #"Microsoft.WindowsStore"
+    #"Microsoft.Windows.Search"
+    #"Microsoft.MicrosoftEdgeDevToolsClient"
     "Microsoft.ScreenSketch",
     "Microsoft.Paint3D",
+    "Microsoft.MicrosoftEdge"
     "Microsoft.WindowsCalculator",
-    "Microsoft.WindowsStore",
     "Microsoft.Windows.Photos",
-    "CanonicalGroupLimited.UbuntuonWindows",
-    "Microsoft.XboxGameCallableUI",
-    "Microsoft.XboxGamingOverlay",
-    "Microsoft.Xbox.TCUI",
-    "Microsoft.XboxGamingOverlay",
-    "Microsoft.XboxIdentityProvider",
     "Microsoft.MicrosoftStickyNotes",
     "Microsoft.MSPaint",
     "Microsoft.WindowsCamera",
     ".NET",
     "Microsoft.HEIFImageExtension",
     "Microsoft.ScreenSketch",
-    "Microsoft.StorePurchaseApp",
     "Microsoft.VP9VideoExtensions",
     "Microsoft.WebMediaExtensions",
     "Microsoft.WebpImageExtension",
     "Microsoft.DesktopAppInstaller",
+    "Microsoft.RemoteDesktop",
     "WindSynthBerry",
     "MIDIBerry",
     "Slack"
@@ -74,3 +70,4 @@ foreach ($App in $InstalledApps) {
 }
 
 Write-Host "Whitelisted Apps bleiben erhalten. Andere wurden entfernt."
+end script
