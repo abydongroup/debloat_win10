@@ -70,4 +70,4 @@ foreach ($App in $InstalledApps) {
 }
 
 Write-Host "Whitelisted Apps bleiben erhalten. Andere wurden entfernt."
-end script
+# end script
