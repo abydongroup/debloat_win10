@@ -30,6 +30,7 @@ $Whitelist = @(
     "Microsoft.RemoteDesktop",
     "WindSynthBerry",
     "MIDIBerry",
+    "Nvidia",
     "Slack"
 )
 
